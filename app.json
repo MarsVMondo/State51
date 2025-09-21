@@ -1,0 +1,78 @@
+{
+  "expo": {
+    "name": "State 51 Detector",
+    "slug": "state51-detector",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.quantum.state51detector",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses location for GPS accuracy monitoring to detect State 51 quantum effects.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app uses location for continuous GPS monitoring to detect quantum field anomalies.",
+        "NSMotionUsageDescription": "This app uses motion sensors to detect quantum resonance patterns.",
+        "UIBackgroundModes": [
+          "background-fetch",
+          "background-processing"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.quantum.state51detector",
+      "permissions": [
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.VIBRATE",
+        "android.permission.WAKE_LOCK",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Allow State 51 Detector to access motion sensors for quantum pattern detection."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow State 51 Detector to access location for GPS accuracy monitoring."
+        }
+      ],
+      [
+        "expo-task-manager",
+        {
+          "backgroundModes": [
+            "background-fetch",
+            "background-processing"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      }
+    },
+    "scheme": "state51detector"
+  }
+}
